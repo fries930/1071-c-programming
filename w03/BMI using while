@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{ 
+float a,b,BMI;
+    
+	printf("Enter your height : ");	
+	scanf("%f.2",&a);
+	printf("Enter your weight : ");
+	scanf("%f.1",&b);
+	BMI=b/(a*a);
+	
+	while(BMI>=0){
+		
+		if(BMI<18.5)
+			printf("體重過輕\n");
+		else if(BMI>=18.5 && BMI<24)
+			printf("正常範圍\n");
+		else if(BMI>=24 && BMI<27)
+			printf("過重\n");
+		else if(BMI>=27 && BMI<30)
+			printf("輕度肥胖\n");
+		else if(BMI>=30 && BMI<35)
+			printf("中度肥胖\n");
+		else if(BMI>=35)
+			printf("重度肥胖\n");
+		scanf("%f.2",&a);
+		printf("Enter your weight : ");
+		scanf("%f.1",&b);
+		return 0;
+	}
+	
+
+
+	return 0;
+}
